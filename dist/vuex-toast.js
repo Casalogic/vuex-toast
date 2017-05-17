@@ -101,9 +101,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var Toast = { render: function render() {
     var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "toast", class: _vm.positionClass }, [_c('toast-transition', _vm._l(_vm.messages, function (m) {
-      return _c('div', { key: m.id, staticClass: "toast-message", class: _vm.messageTypeClass(m), attrs: { "role": "note" } }, [_vm.$t ? _c('div', { staticClass: "toast-message-text", domProps: { "innerHTML": _vm._s(_vm.$t(m.text)) } }) : _c('div', { staticClass: "toast-message-text", domProps: { "innerHTML": _vm._s(_vm.$t(m.text)) } }), _vm.$t ? _c('button', { staticClass: "toast-button", attrs: { "aria-label": _vm.$t('Close'), "type": "button" }, on: { "click": function click($event) {
+      return _c('div', { key: m.id, staticClass: "toast-message", class: _vm.messageTypeClass(m), attrs: { "role": "note" } }, [_vm.$t ? _c('div', { staticClass: "toast-message-text", domProps: { "innerHTML": _vm._s(_vm.$t(m.text)) } }) : _c('div', { staticClass: "toast-message-text", domProps: { "innerHTML": _vm._s(m.text) } }), typeof _vm.$t === 'function' ? _c('button', { staticClass: "toast-button", attrs: { "aria-label": _vm.$t('Close'), "type": "button" }, on: { "click": function click($event) {
             _vm.close(m.id);
-          } } }) : _c('button', { staticClass: "toast-button", attrs: { "aria-label": _vm.$t('Close'), "type": "button" }, on: { "click": function click($event) {
+          } } }) : _c('button', { staticClass: "toast-button", attrs: { "aria-label": _vm.Close, "type": "button" }, on: { "click": function click($event) {
             _vm.close(m.id);
           } } })]);
     }))], 1);
