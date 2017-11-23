@@ -1,6 +1,6 @@
 {
   "name": "vuex-toast",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "katashin",
   "description": "Simple toast notification using Vuex",
   "keywords": [
@@ -59,14 +59,14 @@
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "uglifyjs": "^2.4.10",
-    "vue": "^2.1.8",
+    "vue": "^2.5.0",
     "vue-loader": "^10.0.2",
-    "vuex": "^2.1.1",
+    "vuex": "^3.0.0",
     "webpack": "^2.2.0-rc.3",
     "webpack-dev-server": "^2.2.0-rc.0"
   },
   "peerDependencies": {
-    "vue": "^2.0.0",
-    "vuex": "^2.0.0"
+    "vue": "^2.5.0",
+    "vuex": "^3.0.0"
   }
 }

@@ -2,8 +2,9 @@
   <div class="toast" :class="positionClass">
     <toast-transition>
       <div class="toast-message" :class="messageTypeClass(m)" v-for="m in messages" :key="m.id" role="note">
+        <div v-if="$tc" class="toast-message-text" v-html="$tc(m.text)"></div>
         <div class="toast-message-text" v-html="m.text"></div>
-        <button v-if="$t" class="toast-button" :aria-label="$t('Close')" type="button" @click="close(m.id)"></button>
+        <button v-if="$tc" class="toast-button" :aria-label="$tc('close')" type="button" @click="close(m.id)"></button>
         <button v-else class="toast-button" :aria-label="Close" type="button" @click="close(m.id)"></button>
       </div>
     </toast-transition>
