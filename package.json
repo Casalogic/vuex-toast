@@ -61,6 +61,7 @@
     "uglifyjs": "^2.4.10",
     "vue": "^2.5.0",
     "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.5.8",
     "vuex": "^3.0.0",
     "webpack": "^2.2.0-rc.3",
     "webpack-dev-server": "^2.2.0-rc.0"
